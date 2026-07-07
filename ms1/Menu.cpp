@@ -4,7 +4,7 @@
 #include <iostream>
 
 namespace seneca{
-    MenuItem::MenuItem(char* title, int numberIdt, int sizeIdt,int rowNum){
+    MenuItem::MenuItem(const char* title, int numberIdt, int sizeIdt,int rowNum){
         if(title==nullptr||ut.isspace(title)||sizeIdt>4||numberIdt>4||rowNum>(int)MaximumNumberOfMenuItems){
             m_title = nullptr;
             m_numberIdt = 0;
@@ -47,7 +47,7 @@ namespace seneca{
                     ostr<<m_rowNum<<"- ";
                 }
             }
-            char* firstLetter = m_title;
+            const char* firstLetter = m_title;
             while(*firstLetter&& ut.isspace(*firstLetter)){
                 firstLetter++;
             }

@@ -11,7 +11,7 @@ namespace seneca {
          int m_rowNum;
 
       public:
-         MenuItem(char* title, int numberIdt, int sizeIdt,int rowNum);
+         MenuItem(const char* title, int numberIdt, int sizeIdt,int rowNum);
          MenuItem(const MenuItem& item)=delete;
          MenuItem& operator=(const MenuItem& item)=delete;
          ~MenuItem();

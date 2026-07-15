@@ -66,13 +66,13 @@ namespace seneca{
         m_itemTitle(itemTitle,numberIdt,sizeIdt,-1),
         m_exitOption(exitOption,numberIdt,sizeIdt,0),
         m_selectionPrompt("> ",numberIdt,sizeIdt,-1){
-            for(int i = 0; i < MaximumNumberOfMenuItems; i++){
+            for(int i = 0; i < (int)MaximumNumberOfMenuItems; i++){
                 m_itemPointers[i]=nullptr;
             }
     }
 
     Menu& Menu::operator<<(const char* itemTitle){
-        if(m_numMenuItems < MaximumNumberOfMenuItems){
+        if(m_numMenuItems < (int)MaximumNumberOfMenuItems){
             MenuItem* content = new MenuItem(itemTitle,m_numberIdt,m_sizeIdt,m_numMenuItems+1);
             m_itemPointers[m_numMenuItems] = content;
             m_numMenuItems++;

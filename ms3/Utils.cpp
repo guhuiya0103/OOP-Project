@@ -91,6 +91,7 @@ namespace seneca {
             cout << "Invalid value: [min <= value <= max], try again: ";
          } else {
             validInteger = true;
+            cin.ignore(100,'\n');
          }
       }
 

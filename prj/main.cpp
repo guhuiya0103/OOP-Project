@@ -23,7 +23,7 @@ int main() {
     orderMenu << "Food"
               << "Drink";
 
-    Menu confirmExitMenu("You have bills that are not saved. Are you sue you want to exit?", "No");
+    Menu confirmExitMenu("You have bills that are not saved, are you sue you want to exit?", "No");
     confirmExitMenu << "Yes";
 
     bool done = false;

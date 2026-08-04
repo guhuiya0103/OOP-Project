@@ -12,7 +12,7 @@ int main() {
         return 1;
     }
 
-    Menu mainMenu("Seneca Restaurant", "End Program");
+    Menu mainMenu("Seneca Restaurant ", "End Program");
     mainMenu << "Order"
              << "Print Bill"
              << "Start a New Bill"

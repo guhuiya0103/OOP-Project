@@ -88,7 +88,7 @@ namespace seneca {
       while (!validInteger) {
          value = getInt();
          if (value < min || value > max) {
-            cout << "Invalid value: [" << min << " <= value <= " << max << "], try again: ";
+            cout << "Invalid value: [" << min << "<= value <=" << max << "], try again: ";
          } else {
             validInteger = true;
          }
